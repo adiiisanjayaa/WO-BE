@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/paket-weddings",
+      "handler": "paket-wedding.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/paket-weddings/count",
+      "handler": "paket-wedding.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/paket-weddings/:id",
+      "handler": "paket-wedding.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/paket-weddings",
+      "handler": "paket-wedding.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/paket-weddings/:id",
+      "handler": "paket-wedding.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/paket-weddings/:id",
+      "handler": "paket-wedding.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

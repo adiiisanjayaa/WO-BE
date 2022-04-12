@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pesanans",
+  "info": {
+    "name": "Pesanan",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paket_weddings": {
+      "via": "pesanans",
+      "collection": "paket-wedding",
+      "dominant": true
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "pesanans",
+      "dominant": true
+    },
+    "notes": {
+      "type": "richtext"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "unpaid",
+        "paid"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pesanans",
+      "handler": "pesanan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pesanans/count",
+      "handler": "pesanan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pesanans/:id",
+      "handler": "pesanan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pesanans",
+      "handler": "pesanan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pesanans/:id",
+      "handler": "pesanan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pesanans/:id",
+      "handler": "pesanan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
